@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0----">
+        <li class="text">스파샵 사선 외관 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1--">
+        <li class="text">스파샵 외관</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-1-">
+        <li class="text">1층 현관</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-1-">
+        <li class="text">1층 로비</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-1--">
+        <li class="text">1층 테라피존 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5---">
+        <li class="text">테라피존 마사지실 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-1--">
+        <li class="text">1층 화장실 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-1---">
+        <li class="text">1층 마사지실 복도 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8--">
+        <li class="text">메인 마사지실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-panorama13">
+        <li class="text">Panorama13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-">
+        <li class="text">계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-2--">
+        <li class="text">2층 복도 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-1--1">
+        <li class="text">1층 옥외 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-1--2">
+        <li class="text">1층 옥외 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-2--">
+        <li class="text">2층 화장실 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-2--2">
+        <li class="text">2층 복도 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-2----">
+        <li class="text">2층 마사지실 가족 룸 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-2----">
+        <li class="text">2층 마사지실 커플 룸 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-2--">
+        <li class="text">2층 옥외 현관</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-2---">
+        <li class="text">2층 옥외 현관앞 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2--">
+        <li class="text">2층 옥외 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21--1">
+        <li class="text">자쿠지 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22--2">
+        <li class="text">자쿠지 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23--3">
+        <li class="text">자쿠지 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-">
+        <li class="text">동</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-">
+        <li class="text">남</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-">
+        <li class="text">서</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27----">
+        <li class="text">테라피 존 나가는길 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-1---">
+        <li class="text">1층 옥외 가는길 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29---">
+        <li class="text">옥외 사이드 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-panorama31">
+        <li class="text">Panorama31</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
